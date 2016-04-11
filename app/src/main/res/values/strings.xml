@@ -2,4 +2,8 @@
     <string name="app_name">BustedTracking</string>
     <string name="title_activity_main">Map</string>
     <string name="google_app_id">AIzaSyClt5zR72BndR4Ng4Vdfw2kMtJMFPuYIV0</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+
 </resources>

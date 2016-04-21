@@ -8,6 +8,7 @@ android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:fitsSystemWindows="true"
 tools:openDrawer="start">
+
     <!-- This LinearLayout represents the contents of the screen  -->
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,7 +19,6 @@ tools:openDrawer="start">
     layout="@layout/app_bar_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent" />
-
     </LinearLayout>
     <!-- The navigation drawer that comes from the left -->
     <!-- Note that `android:layout_gravity` needs to be set to 'start' -->

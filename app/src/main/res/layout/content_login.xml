@@ -7,7 +7,8 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/app_bar_simple"
-    tools:context="com.example.meer.bustedtracking.LoginActivity">
+    tools:context="com.example.meer.bustedtracking.LoginActivity"
+    android:background="@color/colorAccent">
 
 
     <TextView
@@ -19,7 +20,7 @@
         android:layout_alignBaseline="@+id/etUserName"
         android:layout_alignBottom="@+id/etUserName"
 
-        android:textColor="@android:color/black" />
+        android:textColor="@android:color/white" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -27,11 +28,11 @@
         android:inputType="textEmailAddress"
         android:ems="10"
         android:id="@+id/etUserName"
-
         android:layout_marginTop="103dp"
         android:layout_alignParentTop="true"
         android:layout_alignLeft="@+id/etPassword"
-        android:layout_alignStart="@+id/etPassword" />
+        android:layout_alignStart="@+id/etPassword"
+        android:backgroundTint="@android:color/white"/>
 
     <EditText
         android:layout_width="wrap_content"
@@ -43,7 +44,8 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_marginRight="29dp"
-        android:layout_marginEnd="29dp" />
+        android:layout_marginEnd="29dp"
+        android:backgroundTint="@android:color/white"/>
 
 
 
@@ -57,7 +59,7 @@
         android:layout_below="@+id/textView"
         android:layout_alignLeft="@+id/textView"
         android:layout_alignStart="@+id/textView"
-        android:textColor="@android:color/black" />
+        android:textColor="@android:color/white" />
 
 
     <TextView
@@ -69,7 +71,8 @@
         android:textSize="20dp"
         android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:textColor="@android:color/white"/>
 
     <RadioGroup
         android:id="@+id/route_radioGroup"
@@ -84,7 +87,8 @@
         android:showDividers="middle"
         android:touchscreenBlocksFocus="false"
         android:divider="@color/material_deep_teal_500"
-        android:padding="16dp">
+        android:padding="16dp"
+        >
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -93,6 +97,7 @@
             android:checked="false"
             android:textSize="22dp"
             android:layout_marginBottom="26dp"
+            android:textColor="@android:color/white"
             />
 
         <RadioButton
@@ -103,7 +108,8 @@
             android:checked="false"
             android:textSize="22dp"
             android:layout_marginBottom="26dp"
-            />
+            android:textColor="@android:color/white"
+            android:textColorLink="@android:color/white"/>
 
     </RadioGroup>
     <Button

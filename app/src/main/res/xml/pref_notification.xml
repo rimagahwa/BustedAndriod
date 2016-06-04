@@ -6,7 +6,7 @@
         android:defaultValue="false"
         android:key="notifications_new_message"
         android:title="@string/pref_title_new_message_notifications"
-        android:summary="Get notified when a bus is 5 minutes away or less"/>
+        />
 
     <!-- Allows the user to choose a ringtone in the 'notification' category. -->
     <!-- NOTE: This preference will be enabled only when the checkbox above is checked. -->
@@ -20,7 +20,7 @@
 
     <!-- NOTE: This preference will be enabled only when the checkbox above is checked. -->
     <SwitchPreference
-        android:defaultValue="false"
+        android:defaultValue="true"
         android:dependency="notifications_new_message"
         android:key="notifications_new_message_vibrate"
         android:title="@string/pref_title_vibrate" />

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:showIn="@layout/app_bar_simple"
+    tools:context="com.example.meer.bustedtracking.LoginActivity"
+    android:background="@color/colorAccent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:scrollIndicators="right"
+    android:gravity="clip_horizontal">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_marginTop="40dp"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_horizontal">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textSize="24sp"
+        android:id="@+id/textView"
+
+
+        android:textColor="@android:color/white"
+        android:layout_alignBottom="@+id/etUserName"
+        android:layout_alignStart="@+id/textView2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="8"
+        android:id="@+id/etUserName"
+
+
+        android:backgroundTint="@android:color/white"
+        android:layout_weight="0.14"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="30dp"
+        android:layout_above="@+id/etPassword"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="5dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="8"
+        android:id="@+id/etPassword"
+
+        android:backgroundTint="@android:color/white"
+        android:layout_weight="0.14"
+        android:layout_marginLeft="10dp"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="5dp" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textSize="24sp"
+        android:id="@+id/textView2"
+
+
+        android:textColor="@android:color/white"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.14"
+        android:layout_marginBottom="47dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/etPassword"
+        android:layout_marginEnd="33dp" />
+
+
+</RelativeLayout>
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:nestedScrollingEnabled="false"
+    android:layout_marginTop="10dp"
+    android:layout_gravity="right">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:src="@drawable/red_bus"
+        android:maxHeight="25dp"
+        android:maxWidth="35dp"
+        android:layout_weight="0.0"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignTop="@+id/route_radioGroup"
+        android:layout_toEndOf="@+id/route_radioGroup"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView3"
+        android:src="@drawable/yellow_bus"
+        android:maxHeight="25dp"
+        android:maxWidth="35dp"
+
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="0dp"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignStart="@+id/imageView2" />
+
+    <RadioGroup
+        android:id="@+id/route_radioGroup"
+        android:layout_width="166dp"
+        android:layout_height="180dp"
+
+        android:showDividers="middle"
+        android:touchscreenBlocksFocus="false"
+        android:divider="@android:color/white"
+        android:padding="16dp"
+        android:layout_gravity="right"
+        android:focusable="false"
+        android:focusableInTouchMode="true"
+        android:layout_marginRight="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="30dp">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Route A"
+            android:id="@+id/route_a_radioButton"
+            android:checked="false"
+            android:textSize="22dp"
+
+            android:textColor="@android:color/white"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="5dp"
+            android:buttonTint="@android:color/white"
+            android:layout_gravity="right" />
+
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Route B"
+            android:id="@+id/route_b_radioButton"
+            android:checked="false"
+            android:textSize="22dp"
+
+            android:textColor="@android:color/white"
+            android:textColorLink="@android:color/white"
+            android:layout_gravity="right"
+            android:layout_margin="10dp"
+            android:singleLine="false"
+            android:buttonTint="@android:color/white"
+            android:layout_marginTop="20dp" />
+
+
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Please Choose Your Route Type"
+        android:id="@+id/textView3"
+        android:textSize="22sp"
+
+        android:textColor="@android:color/white"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.14"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentEnd="false"
+        android:layout_marginBottom="25dp"
+        android:layout_alignParentBottom="false"
+        android:textStyle="italic" />
+
+
+</RelativeLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/btnLogin"
+        android:onClick="OnLogin"
+        android:layout_gravity="center"
+        android:textSize="16dp"
+        android:layout_marginTop="25dp"
+        android:focusable="true"
+        android:shadowColor="@color/accent_material_dark"
+        android:singleLine="false"
+        android:background="@color/button_material_dark"
+        android:backgroundTint="@android:color/background_light" />
+
+
+</LinearLayout>
+</ScrollView>

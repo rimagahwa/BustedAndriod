@@ -89,12 +89,10 @@
         <activity android:name=".LoggedIn" />
         <activity
             android:name=".SettingsActivity"
-            android:label="@string/title_activity_settings"
-            android:parentActivityName=".MainActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.meer.bustedtracking.MainActivity" />
-        </activity>
+            android:label="@string/title_activity_settings" />
+
+        <activity android:name=".About"></activity>
+        <activity android:name=".RegisterActivity"></activity>
     </application>
 
 </manifest>

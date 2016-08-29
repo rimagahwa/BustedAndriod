@@ -14,7 +14,10 @@
     <group
         android:id="@+id/nav_menu_bottom"
         android:checkableBehavior="none">
-
+            <item
+                android:id="@+id/nav_register"
+                android:icon="@drawable/common_google_signin_btn_icon_dark"
+                android:title="@string/register"></item>
             <item
                 android:id="@+id/nav_settings"
                 android:icon="@drawable/ic_menu_manage"
